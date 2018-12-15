@@ -1,10 +1,16 @@
 {
-  "extends": ["config:base", "schedule:nonOfficeHours"],
-  "assignees": ["kamontat"],
-  "reviewers": ["kamontat"],
-  "automerge": true,
-  "automergeType": "pr-comment",
-  "major": {
-    "automerge": false
-  }
+  "extends": [
+    "config:base",
+    ":rebaseStalePrs",
+    ":masterIssue",
+    ":masterIssueApproval",
+    ":assignAndReview(kamontat)",
+    ":automergeMinor",
+    ":automergeDigest",
+    ":automergeBranchPush",
+    ":pinSkipCi",
+    ":prConcurrentLimit10",
+    "schedule:nonOfficeHours",
+    "group:allNonMajor"
+  ]
 }
