@@ -5,6 +5,6 @@ Custom Renovate Configuration
 
 ```json
 {
-  "extends": ""github>kamontat/renovate-config"
+  "extends": "github>kamontat/renovate-config"
 }
 ```
