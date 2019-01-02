@@ -10,5 +10,6 @@
     ":prConcurrentLimit10",
     "schedule:nonOfficeHours",
     "group:allNonMajor"
-  ]
+  ],
+  "labels": ["bot", "dependencies"]
 }
