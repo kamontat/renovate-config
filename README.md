@@ -16,7 +16,8 @@ Custom Renovate Configuration
     ":prConcurrentLimit10",
     "schedule:nonOfficeHours",
     "group:allNonMajor"
-  ]
+  ],
+  "labels": ["bot", "dependencies"]
 }
 ```
 
@@ -30,6 +31,7 @@ Custom Renovate Configuration
 8. `:prConcurrentLimit10` - Limit to maximum 10 concurrent Renovate PRs at any time. [prconcurrentlimit10](https://renovatebot.com/docs/presets-default/#prconcurrentlimit10)
 9. `schedule:nonOfficeHours` - Schedule for typical non-office hours (night time and weekends). [schedulenonofficehours](https://renovatebot.com/docs/presets-schedule/#schedulenonofficehours)
 10. `group:allNonMajor` - Group all minor and patch updates together. [groupallnonmajor](https://renovatebot.com/docs/presets-group/#groupallnonmajor)
+11. `labels` - Labels to add to Pull Request. [labels](https://renovatebot.com/docs/configuration-options/#labels)
 
 ## Usage
 
